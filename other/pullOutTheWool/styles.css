@@ -1,0 +1,113 @@
+/* CSS file placeholder. */
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+body {
+    width: 600px;
+    min-height: 400px;
+}
+
+*:focus {
+    outline: none;
+}
+
+header {
+    text-align: center;
+}
+
+#exec {
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    width: 30%;
+    margin: 20px auto;
+    padding: 8px 13px;
+    border-radius: 5px;
+    color: purple;
+    border: purple 1px solid;
+    background-color: transparent;
+    transition: all .5s ease-in-out;
+}
+
+#exec:hover {
+    color: white;
+    background-color: darkslateblue;
+}
+
+#exec:focus {
+    box-shadow: 2px 1px 22px 5px slategray;
+}
+
+#console {
+    display: block;
+    width: 90%;
+    margin: 2px auto;
+    border-radius: 5px;
+}
+
+#console legend {
+    font-size: 20px;
+    color: sienna;
+    font-weight: bold;
+}
+
+#console textarea {
+    cursor: pointer;
+    overflow: auto;
+    color: dodgerblue;
+    background-color: darkslategray;
+    padding: 10px;
+    width: calc(100% - 1.5em);
+    height: 10rem;
+    border: none;
+    resize: none;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+ul>li {
+    height: 38px;
+}
+
+li>span {
+    text-align: right;
+    display: inline-block;
+    font-weight: bold;
+    min-width: 35%;
+}
+
+input,
+select {
+    background: #eaeaea;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    min-width: 35%;
+}
+
+.result li {
+    height: auto;
+    padding: 18px 0;
+}
+
+.result li * {
+    font-weight: normal;
+    display: block;
+    text-align: center;
+    padding: 2px 0;
+}
+
+.result li *:nth-child(odd) {
+    background-color: #cecece;
+}

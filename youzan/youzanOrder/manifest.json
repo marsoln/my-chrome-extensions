@@ -1,0 +1,22 @@
+{
+    "name": "youzanOrder",
+    "short_name": "youzanOrder",
+    "manifest_version": 2,
+    "description": "",
+    "version": "1.0",
+    "minimum_chrome_version": "38",
+    "icons": {
+        "16": "assets/16.ico",
+        "48": "assets/48.ico",
+        "128": "assets/128.ico"
+    },
+    "permissions": [
+        "cookies",
+        "https://koudaitong.com/"
+    ],
+    "browser_action": {
+        "default_title": "有赞订单",
+        "default_icon": "assets/16.ico",
+        "default_popup": "index.html"
+    }
+}

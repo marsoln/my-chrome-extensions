@@ -1,0 +1,22 @@
+{
+    "name": "haoyangmao",
+    "short_name": "hym",
+    "manifest_version": 2,
+    "description": "",
+    "version": "1.0",
+    "minimum_chrome_version": "38",
+    "icons": {
+        "16": "assets/16.png",
+        "48": "assets/48.png",
+        "128": "assets/128.png"
+    },
+    "permissions": [
+        "cookies",
+        "*://*.jd.com/"
+    ],
+    "browser_action": {
+        "default_title": "薅羊毛呀",
+        "default_icon": "assets/16.png",
+        "default_popup": "popup.html"
+    }
+}

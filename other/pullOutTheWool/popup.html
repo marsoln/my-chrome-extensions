@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link href="./styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <section class="container">
+        <fieldset id="console">
+            <legend>选择参数</legend>
+            <ul>
+                <li>
+                    <span>类型</span>
+                    <select id="cardType">
+                        <option value="" selected="selected">默认</option>
+                    </select>
+                </li>
+                <li>
+                    <span>分类</span>
+                    <select id="category">
+                        <option value="" selected="selected">默认</option>
+                    </select>
+                </li>
+                <li>
+                    <span>抓取页面数量</span>
+                    <input id="crawledPageAmount" type="number" min="5" max="100" value="5" />
+                </li>
+                <li>
+                    <span>最低卡券优惠限额</span>
+                    <input id="minDiscountAmount" type="number" min="1" value="80" />
+                </li>
+                <li>
+                    <span>领取的优惠券数量</span>
+                    <input id="resultAmount" type="number" min="1" max="100" value="5" />
+                </li>
+            </ul>
+            <button id="exec" class="btn btn-primary">试试手气</button>
+            <ul class="result"></ul>
+        </fieldset>
+    </section>
+    <script src="./main.js"></script>
+</body>
+
+</html>
