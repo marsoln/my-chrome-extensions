@@ -73,10 +73,10 @@
 	                            var $tar = (0, _jquery2.default)(o);
 	                            if (!$tar.find('.btn-state.btn-getend')[0]) {
 	                                // 过滤掉抢完的券
-	                                var discount = $tar.find('.num').text(); // 折扣值
+	                                var discount = parseInt($tar.find('.num').text()); // 折扣值
 	                                var limitText = $tar.find('.limit span').text().match(/\d+/); // 条件限度
 	                                if (limitText) {
-	                                    var limit = limitText[0];
+	                                    var limit = +limitText[0];
 	                                    var title = $tar.find('.q-range p').text(); // 使用范围
 	                                    var key = $tar.data('key');
 	                                    var discountRate = discount / limit;
@@ -204,7 +204,7 @@
 	                    cat: category
 	                }).then(function () {
 	                    var info = cardInfo.filter(function (c) {
-	                        return c.discount >= minDiscountAmount;
+	                        return parseInt(c.discount) >= parseInt(minDiscountAmount);
 	                    });
 	                    info.sort(function (p, n) {
 	                        return n.discountRate - p.discountRate;
