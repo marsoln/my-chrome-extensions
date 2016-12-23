@@ -16,10 +16,10 @@ const DO_QUERY = function(opt) {
                             if (o) {
                                 let $tar = $(o)
                                 if (!$tar.find('.btn-state.btn-getend')[0]) { // 过滤掉抢完的券
-                                    let discount = +$tar.find('.num').text() // 折扣值
-                                    let limitText = +$tar.find('.limit span').text().match(/\d+/) // 条件限度
+                                    let discount = parseInt($tar.find('.num').text()) // 折扣值
+                                    let limitText = $tar.find('.limit span').text().match(/\d+/) // 条件限度
                                     if (limitText) {
-                                        let limit = limitText[0]
+                                        let limit = +limitText[0]
                                         let title = $tar.find('.q-range p').text() // 使用范围
                                         let key = $tar.data('key')
                                         let discountRate = discount / limit
