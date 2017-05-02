@@ -4,7 +4,6 @@
     "description": "chrome小插件",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "babel": {
         "presets": [
@@ -12,7 +11,7 @@
             "stage-2"
         ]
     },
-    "author": "",
+    "author": "marsoln",
     "license": "MIT",
     "dependencies": {
         "jquery": "^2.1.4"
